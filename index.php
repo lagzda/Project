@@ -24,7 +24,7 @@
 <?php
 
     //Connect to the database
-    $host = "lagzda-project-2843879";   //See Step 3 about how to get host name
+    $host =  getenv('IP');;   //See Step 3 about how to get host name
     $user = "lagzda";                     //Your Cloud 9 username
     $pass = "";                                 //Remember, there is NO password!
     $db = "project";                          //Your database name you want to connect to
@@ -32,16 +32,13 @@
 
     $connection = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
 
-
-
     //And now to perform a simple query to make sure it's working
     $query = "SELECT * FROM Majors";
     $result = mysqli_query($connection, $query);
 
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "The ID is: " . $row['name'] . " and the Username is: ";
+        echo "The Major is: " . $row['Name'];
     }
-
 ?>
       
       
