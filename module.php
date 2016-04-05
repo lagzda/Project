@@ -1,6 +1,9 @@
 <?php
  @session_start();
  require "config1.inc.php";
+  if($_SESSION['user']==""){
+    header( 'Location: /login1.php' ) ;
+  }
  ?>
 <!DOCTYPE html>
 <html lang="en">
