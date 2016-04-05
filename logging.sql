@@ -1,3 +1,4 @@
+drop database logging;
 create database logging;
 use logging;
 CREATE TABLE IF NOT EXISTS `major` (
@@ -73,6 +74,4 @@ INSERT INTO `user_major` (`id`, `major_id`, `major_name`) VALUES
 ('20131003694@gdufs.com', '1', 'computing'),
 ('20131003532@gdufs.com', '1', 'computing');
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
