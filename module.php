@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
  @session_start();
  require "config1.inc.php";
  ?>
-=======
->>>>>>> 79487903652dff90944badea95372254110ce45f
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,8 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Project</a>
-<<<<<<< HEAD
+          <a class="navbar-brand" href="/">Hao useful</a>
 
 
     <?php 
@@ -52,25 +48,21 @@
       }
       else
       {
-           echo'<div class="navbar-brand"><span class="name">';echo 'hi !   '; echo  $_SESSION['name'];echo'</span></div>';
-           echo'
-              <div class="navbar-brand">';echo 'your major is ';echo $_SESSION['major_name'] ;  echo '</div>';
+           echo'<p class="navbar-text navbar-right">';echo 'Hi '; echo  $_SESSION['name'];echo '! Your major is ';echo $_SESSION['major_name'] ;echo'!</p>';
        
       }
 
 
     ?>
 
-
-=======
->>>>>>> 79487903652dff90944badea95372254110ce45f
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          
+          <div class="pull-right">
+              <div class="btn btn-default navbar-btn">Log out</div>
+          </div>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-<<<<<<< HEAD
     <div class="container"style="width:8000px;margin-left:150px;padding:0" >
         <h1>Module information</h1>
         <div  style="float: left;width:600px " >
@@ -152,49 +144,6 @@
         </div>
         <div style="float: left;">
         <div class="col-xs-8"  >
-=======
-    <div class="container">
-        <h1>Module information</h1>
-        <div class="col-xs-8">
-            <div class="panel panel-primary">
-              <div class="panel-heading">Java</div>
-              <div class="panel-body" style="padding:0">
-                  <table class = "table table-bordered" style="margin-bottom:0">
-   
-   <thead>
-      <tr>
-         <th>Teacher</th>
-         <th>Classroom</th>
-         <th>Time</th>
-      </tr>
-   </thead>
-   
-   <tbody>
-      <tr>
-         <td>Kevin Gong</td>
-         <td>A202</td>
-         <td>Monday 12:00</td>
-      </tr>
-      
-      <tr>
-         <td>Jason Lee</td>
-         <td>C307</td>
-         <td>Tuesday 14:00</td>
-      </tr>
-      
-      <tr>
-         <td>Cindy Chan</td>
-         <td>G408</td>
-         <td>Thursday 12:00</td>
-      </tr>
-   </tbody>
-	
-</table>
-              </div>
-            </div>
-        </div>
-        <div class="col-xs-4">
->>>>>>> 79487903652dff90944badea95372254110ce45f
             
             <div class="panel panel-info">
               <div class="panel-heading">Major notifications</div>
@@ -214,7 +163,6 @@
               </div>
             </div>
         </div>
-<<<<<<< HEAD
 
 
       <div class="col-xs-8"   >
@@ -240,9 +188,6 @@
 
     </div>
   </div>
-=======
-    </div>
->>>>>>> 79487903652dff90944badea95372254110ce45f
       
     <div id="footer" class="container">
         <nav class="navbar navbar-default navbar-fixed-bottom">
