@@ -24,9 +24,12 @@ CREATE TABLE IF NOT EXISTS `major_module` (
 
 
 INSERT INTO `major_module` (`major_name`, `module_name`) VALUES
-('computing', 'java1'),
-('computing', 'java2'),
-('computing', 'java3');
+('computing', 'java'),
+('computing', 'operating system'),
+('computing', 'c++'),
+('software engineering', 'data mining'),
+('software engineering', 'database management'),
+('software engineering', 'linear algebra');
 
 
 
@@ -40,10 +43,12 @@ CREATE TABLE IF NOT EXISTS `module` (
 
 
 INSERT INTO `module` (`module_id`, `module_name`, `teacher`, `classroom`, `time`) VALUES
-('m1', 'java1', 'Kevin Gong', 'A202', 'Monday 12:00'),
-('m1', 'java2', 'Jason Lee', 'C307', 'Tuesday 14:00'),
-('m1', 'java3', 'Cindy Chan', 'G408', 'Thursday 12:00');
-
+('m1', 'java', 'Kevin Gong', 'A202', 'Monday 12:00'),
+('m2', 'operating system', 'Jason Lee', 'C307', 'Tuesday 14:00'),
+('m3', 'c++', 'Cindy Chan', 'G408', 'Thursday 12:00'),
+('m4', 'data mining', 'Tom Sit', 'F108', 'Friday 16:00'),
+('m5', 'database management', 'Fiona Yeung', 'D517', 'Tuesday 16:00'),
+('m6', 'linear algebra', 'Windy Chan', 'F408', 'Thursday 14:00');
 
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -72,6 +77,7 @@ CREATE TABLE IF NOT EXISTS `user_major` (
 
 INSERT INTO `user_major` (`id`, `major_id`, `major_name`) VALUES
 ('20131003694@gdufs.com', '1', 'computing'),
-('20131003532@gdufs.com', '1', 'computing');
+('20131003532@gdufs.com', '1', 'computing'),
+('20131003641@gdufs.com', '2', 'software engineering');
 
 
