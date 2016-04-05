@@ -68,9 +68,9 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div class="container"style="width:8000px;margin-left:150px;padding:0" >
+    <div class="container">
         <h1>Module information</h1>
-        <div  style="float: left;width:600px " >
+        <div class="col-xs-12 col-md-8">
     <?php
       $module_row=$_SESSION['module_row'];
       //echo count($module_row);
@@ -78,7 +78,7 @@
       
       foreach ($module_row as $module) {
         $module=$module[0];
-        echo '<div class="col-xs-10">
+        echo '<div>
               <div class="panel panel-primary">';
         echo '<div class="panel-heading">';
         echo  $module;
@@ -147,9 +147,7 @@
 ?>
       
         </div>
-        <div style="float: left;">
-        <div class="col-xs-8"  >
-            
+        <div class="col-xs-12 col-md-4">
             <div class="panel panel-info">
               <div class="panel-heading">Major notifications</div>
               <div class="panel-body" style="padding:0">
@@ -167,11 +165,7 @@
             </ul>
               </div>
             </div>
-        </div>
-
-
-      <div class="col-xs-8"   >
-            
+            <br>
             <div class="panel panel-info">
               <div class="panel-heading">help forum</div>
               <div class="panel-body" style="padding:0">
@@ -191,7 +185,7 @@
             </div>
         </div>
 
-    </div>
+
   </div>
       
     <div id="footer" class="container">
