@@ -34,7 +34,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Project</a>
+
+          <a class="navbar-brand" href="/">Hao useful</a>
+
 
 
     <?php 
@@ -48,9 +50,7 @@
       }
       else
       {
-           echo'<div class="navbar-brand"><span class="name">';echo 'hi !   '; echo  $_SESSION['name'];echo'</span></div>';
-           echo'
-              <div class="navbar-brand">';echo 'your major is ';echo $_SESSION['major_name'] ;  echo '</div>';
+           echo'<p class="navbar-text navbar-right">';echo 'Hi '; echo  $_SESSION['name'];echo '! Your major is ';echo $_SESSION['major_name'] ;echo'!</p>';
        
       }
 
@@ -60,7 +60,9 @@
 
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          
+          <div class="pull-right">
+              <div class="btn btn-default navbar-btn">Log out</div>
+          </div>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
