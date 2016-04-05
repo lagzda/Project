@@ -61,7 +61,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <div class="pull-right">
-              <div class="btn btn-default navbar-btn">Log out</div>
+              <form action="/logout.php" method="get">
+                <button class="btn btn-default navbar-btn">Log out</button>
+              </form>
           </div>
         </div><!--/.nav-collapse -->
       </div>
